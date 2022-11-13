@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+.about-root {
+  width: 100%;
+  height: auto;
+}
+.about-root .bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 50vh;
+  background: #0e0eed;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  z-index: -1;
+}
+.about-root main.about-main {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.about-root main.about-main .hero-header {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+}
+.about-root main.about-main .hero-header .hero-header-content {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-root main.about-main .hero-header .hero-header-content h2 {
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: #fff;
+  transform: translateY(-60px);
+}
+.about-root main.about-main .about-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.about-root main.about-main .about-content .about-content-inner {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-root main.about-main .about-content .img-container {
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  max-height: 550px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-root main.about-main .about-content .img-container img {
+  max-width: inherit;
+  max-height: inherit;
+}
+.about-root main.about-main .about-content .about-text-container {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  padding: 2rem 1rem;
+}
+.about-root main.about-main .about-content .about-text-container p.sub-heading {
+  color: #0e0eed;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.about-root main.about-main .about-content .about-text-container h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .hero-header {
+    height: auto;
+  }
+  .hero-header .hero-header-content h2 {
+    font-size: 2rem !important;
+  }
+  .about-content .img-container img {
+    max-width: 320px !important;
+    max-height: 320px !important;
+  }
+  .about-content .about-text-container h3 {
+    font-size: 2rem !important;
+  }
+}/*# sourceMappingURL=main.css.map */
