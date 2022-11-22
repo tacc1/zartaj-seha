@@ -74,6 +74,7 @@
               letter-spacing: 0.1em;
               cursor: pointer;
               transition: 200ms ease-in-out;
+
               &:hover {
                 box-shadow: 0 8px 42px rgba($color: $white-color, $alpha: 0.42);
               }

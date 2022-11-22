@@ -14,8 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/src/js/main.js" async></script>
-    <script src="/src/js/pages/home.js" async></script>
+    <script src="/src/js/main.js"></script>
   </head>
   <body>
     <div class="about-root">
@@ -29,7 +28,12 @@
               </h2>
             </div>
             <nav>
-              <ul class="menu-list"></ul>
+              <ul class="menu-list">
+                <li class="menu-item"><a href="/">Home</a></li>
+                <li class="menu-item"><a href="/products.html">Products</a></li>
+                <li class="menu-item"><a href="/about.html">About</a></li>
+                <li class="menu-item"><a href="/contact.html">Contact</a></li>
+              </ul>
             </nav>
           </div>
           <div class="contact-info">
@@ -44,8 +48,20 @@
             </button>
           </div>
         </div>
+        <div class="mobile-nav">
+          <div class="button-container">
+            <button type="button" class="mobile-nav-close-btn" onclick="onNavbarClickHandler()">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="mobile-menu-list">
+            <a href="/"><li class="nav-list-item">Home</li></a>
+            <a href="/products.html"><li class="nav-list-item">Products</li></a>
+            <a href="/about.html"><li class="nav-list-item">About</li></a>
+            <a href="/contact.html"><li class="nav-list-item">Contact</li></a>
+          </ul>
+        </div>
         <div class="slider-navbar">
-          
         </div>
       </header>
       <main class="about-main">
@@ -151,7 +167,9 @@
         <div class="contact-us-container-inner">
           <h2>Can't find what you're looking for?</h2>
           <p>If your question is not answered above, we're happy to help.</p>
-          <button class="contact-us-btn">Submit a Support Request</button>
+          <a href="/contact.html">
+            <button class="contact-us-btn">Submit a Support Request</button>
+          </a>
         </div>
       </div>
       <footer class="footer">

@@ -129,12 +129,67 @@ header.header-comp .header-inner .dropdown-navbar-btn {
   display: none;
 }
 header.header-comp .header-inner .dropdown-navbar-btn button.nav-menu-btn {
+  position: relative;
   font-size: 1.25rem;
   background-color: transparent;
   border: none;
+  color: #fff !important;
+  cursor: pointer;
+  z-index: 99;
+}
+header.header-comp .mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  color: #555454;
+  transform: translateY(-100%);
+  transition: 300ms ease-in-out;
+  z-index: -1;
+}
+header.header-comp .mobile-nav .button-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+header.header-comp .mobile-nav .button-container button.mobile-nav-close-btn {
+  position: relative;
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  z-index: 999;
+}
+header.header-comp .mobile-nav .mobile-menu-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+header.header-comp .mobile-nav .mobile-menu-list a {
+  width: 100%;
+}
+header.header-comp .mobile-nav .mobile-menu-list li.nav-list-item {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+header.header-comp .mobile-nav .mobile-menu-list li.nav-list-item a {
+  font-size: 16px;
+  color: #555454;
+}
+header.header-comp .mobile-nav .mobile-menu-list li.nav-list-item:hover {
+  background-color: #0e0eed;
   color: #fff;
   cursor: pointer;
-  z-index: 1;
 }
 
 .menu-list .menu-item a:hover {
@@ -356,6 +411,17 @@ footer.footer .footer-inner .address-box .lets-talk-mail span {
   color: #555454;
 }
 
+.mobile-nav.active {
+  display: block !important;
+  transform: translateY(0) !important;
+  transition: all 300ms ease-in-out !important;
+  z-index: 9999 !important;
+}
+
+.mobile-nav-close-btn {
+  width: 100;
+}
+
 @media only screen and (max-width: 760px) {
   .header-inner {
     height: 60px !important;
@@ -381,5 +447,10 @@ footer.footer .footer-inner .address-box .lets-talk-mail span {
     align-items: flex-start;
     flex-direction: column;
     padding: 1rem !important;
+  }
+}
+@media only screen and (min-width: 761px) {
+  .mobile-nav {
+    display: block;
   }
 }/*# sourceMappingURL=global.css.map */
